@@ -1,3 +1,3 @@
 class WorkerSerializer < ApplicationSerializer
-  attributes :id, :name, :created_at
+  attributes :id, :name, :created_at, :updated_at
 end
