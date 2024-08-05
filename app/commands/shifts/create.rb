@@ -1,8 +1,7 @@
 module Shifts
   class Create < ApplicationCommand
     def initialize(params:)
-      params[:worker_id] = params[:worker_id].to_i if params[:worker_id]
-      @params = params
+      @params = params.merge(worker_id: params[:worker_id].to_i)
       @contract = Shifts::CreateContract.new
     end
 
