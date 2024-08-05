@@ -2,7 +2,7 @@ class ShiftsController < ApplicationController
   before_action :shift, only: [:show, :update, :destroy]
 
   def index
-    @shifts = Shift.all
+    @shifts = Shift.where(worker_id: params[:worker_id])
     render json: @shifts
   end
 
