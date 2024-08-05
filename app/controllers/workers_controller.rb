@@ -19,7 +19,7 @@ class WorkersController < ApplicationController
   end
 
   def destroy
-    @worker.destroy
+    worker.destroy
   end
 
   private

@@ -21,7 +21,7 @@ class ShiftsController < ApplicationController
   end
 
   def destroy
-    @shift.destroy
+    shift.destroy
   end
 
   private
